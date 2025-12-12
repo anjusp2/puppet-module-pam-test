@@ -276,8 +276,10 @@ class pam (
     }
     include pam::limits
 
-    package { $package_name:
+    if $package_name {
+      package { $package_name:
       ensure => installed,
+     }
     }
 
     file { 'pam_d_login':
