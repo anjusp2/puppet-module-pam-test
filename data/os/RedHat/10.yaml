@@ -8,7 +8,7 @@ pam::common_files:
   - system_auth
 
 pam::pam_d_login_template: pam/login.el10.erb
-pam::pam_d_sshd_template: pam/sshd.el10erb
+pam::pam_d_sshd_template: pam/sshd.el10.erb
 pam::package_name: pam
 
 # system-auth
