@@ -1,5 +1,4 @@
 ---
-# EL9 does not use pam_access by default
 pam::login_pam_access: absent
 pam::sshd_pam_access: absent
 
@@ -8,8 +7,8 @@ pam::common_files:
   - password_auth
   - system_auth
 
-pam::pam_d_login_template: pam/login.el9.erb
-pam::pam_d_sshd_template: pam/sshd.el9.erb
+pam::pam_d_login_template: pam/login.el10.erb
+pam::pam_d_sshd_template: pam/sshd.el10erb
 pam::package_name: pam
 
 # system-auth
